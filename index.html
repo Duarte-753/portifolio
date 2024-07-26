@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--MAIN-CSS-->
+    <link rel="stylesheet" href="styles/style.css">
     <title>Portifólio</title>
 </head>
 <body>
+    <!--DESIGN HEADER, MENU-->
+    <header class="header">
+        <a href="#" class="logo">
+            Portifólio
+        </a>
+        
+        <i class="fa-solid fa-bars" id="menu_icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#services">Serviços</a>
+            <a href="#portifolio">Portifólio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        
+    </header><!--Header-->
     
+    <!--HOME SECTION DESIGN-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, Eu mesmo</h3>
+            <h1>Júlio Duarte</h1>
+            <h3>Eu sou um Desenvolvedor</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fuga corrupti blanditiis laborum aspernatur maxime, beatae consectetur cumque ratione, quia neque quibusdam nemo ipsum explicabo cupiditate architecto, possimus suscipit. Vitae!
+            </p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-github"></i></a>          
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>                 
+            </div>
+            <a href="#" class="btn">Baixar Currículo</a>
+        </div><!--HOME-CONTENT-->
+
+        <div class="home-img">
+            <img src="assets/imgs/Perfil.png" alt="Imagem Perfil">
+        </div>
+    </section><!--HOME-SECTION-->
+
+    <!--MAIN-JS-->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
