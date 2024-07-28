@@ -311,6 +311,10 @@ span {
     color: var(--snd-bg-color);
 }
 
+.link-portifolio {
+   color: var(--text-color);
+}
+
 /*Contact*/
 
 .contact h2 {
@@ -517,5 +521,13 @@ span {
 
     .contact form .input-box .input-box {
         width: 100%;
+    }
+
+    .footer-iconTop {
+        display: none;
+     }
+
+    .footer {
+    justify-content:  center;
     }
 }

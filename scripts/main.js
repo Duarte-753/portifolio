@@ -4,8 +4,8 @@ let navBar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
-    navBar.classList.toggle('active')
-}
+    navBar.classList.toggle('active');
+};
 
 /*======================================= scroll section active link ===================================*/
 
@@ -50,7 +50,7 @@ ScrollReveal().reveal('.home-contact p, .about-contact', { origin: 'right' });
 
 /*======================================= typed js ===================================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Desenvolvedor .NET', 'Web Design', 'Analista de Suporte', 'Youtuber'],
+    strings: ['Desenvolvedor', 'Analista de Suporte', 'Youtuber'],
     typespeed: 70,
     backSpeed: 70,
     backDelay: 1000,
