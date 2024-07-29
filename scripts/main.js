@@ -101,6 +101,7 @@ function emailSend(event) {
 document.addEventListener('DOMContentLoaded', function() {
     const phoneInput = document.getElementById('phone');
     const submitBtn = document.getElementById('submitBtn');
+    const form = document.querySelector('form');
 
     phoneInput.addEventListener('input', function(e) {
         // Remove todos os caracteres não numéricos
@@ -132,24 +133,26 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
     });
 
-    document.querySelector('form').addEventListener('submit', function(e) {
+    form.addEventListener('submit', function(e) {
         e.preventDefault(); // Evita o envio padrão do formulário
 
         // Desabilita o botão de envio
         submitBtn.disabled = true;
+        form.reset();
         submitBtn.value = "Enviando...";
 
         // Simula o envio com um atraso de 10 segundos (10000 ms)
         setTimeout(function() {
-            // Aqui você pode adicionar o código para realmente enviar o formulário, se necessário.
-            // e.g., this.submit(); // Submete o formulário programaticamente
+            // Limpa os campos do formulário
+            
 
             // Reabilita o botão de envio após o atraso
             submitBtn.disabled = false;
             submitBtn.value = "Enviar Mensagem";
-        }, 5000); // 10 segundos
+        }, 10000); // 10 segundos
     });
 });
+
 
 
 /*======================================= send email smtp.js ===================================*/
