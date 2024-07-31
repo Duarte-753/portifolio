@@ -138,18 +138,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Desabilita o botão de envio
         submitBtn.disabled = true;
+         // Limpa os campos do formulário
         form.reset();
         submitBtn.value = "Enviando...";
 
-        // Simula o envio com um atraso de 10 segundos (10000 ms)
+        // Simula o envio com um atraso de 5 segundos (5000 ms)
         setTimeout(function() {
-            // Limpa os campos do formulário
+           
             
 
             // Reabilita o botão de envio após o atraso
             submitBtn.disabled = false;
             submitBtn.value = "Enviar Mensagem";
-        }, 10000); // 10 segundos
+        }, 5000); // 5 segundos
     });
 });
 
